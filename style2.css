@@ -1,0 +1,88 @@
+/* Style spécial pour les pages franchises et consoles */
+
+/* Corps de la page */
+
+@font-face
+{ 
+  font-family:'Volter'; 
+  src:url('font/Volter.ttf'); 
+}
+
+body
+{
+	width:1200px; /* Largeur du site : 1200 pixels */
+	margin-left:auto; /* Permet de centrer le site par rapport à la page */
+	margin-right:auto;
+	font-family:'Volter', Georgia, serif;
+	background-color:#000000;
+	color:#fff; /* Couleur du texte en blanc */
+}
+
+section
+{
+	text-align:center;
+}
+
+/* Images */
+
+#banniere
+{
+	margin-left:10%;
+}
+
+.vignette
+{
+	width:150px;
+	height:150px;
+	border:1px solid white;
+	padding:5px;
+	margin:15px;
+}
+
+/* Navigation */
+
+#menu
+{
+	width:55.2%;
+	margin-left:24%;
+	padding:10px 0 0 0;
+	list-style:none; /* Supprime les petits ronds */
+	background:#111;
+	background:linear-gradient(#58FAF4, #000000); /* Dégradé */
+	border-radius:50px; /* Pour arrondir les angles du menu */
+}
+
+#menu li
+{
+	float:left; /* Les éléments se mettent les uns après les autres */
+	padding-bottom:10px; /* Agrandit la marge intérieure du dessous */
+}
+
+#menu a
+{
+	padding:0 25px; /* Marge intérieure entre les boutons */
+	color:#ffffff;
+	text-transform:uppercase; /* Force le texte à se mettre en majuscules */
+	font:bold 12px/25px 'Volter';
+	text-decoration:none; /* Les liens n'ont plus les attributs par défaut */
+}
+
+#menu li:hover > a
+{
+	color:#000000; /* Au survol de la souris le texte devient noir */
+}
+
+#menu:after /* Permet le bon affichage du menu */
+{
+	display:block;
+	content:" ";
+	clear:both;
+}
+
+/* Pied de page */
+
+footer, footer a
+{
+	text-align:center;
+	color:white;
+}

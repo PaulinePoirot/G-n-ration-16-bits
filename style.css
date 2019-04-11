@@ -1,0 +1,169 @@
+/* Style de base */
+
+/* Corps de la page */
+
+@font-face
+{ 
+  font-family:'Volter'; 
+  src:url('font/Volter.ttf'); 
+}
+
+body
+{
+	width:1200px; /* Largeur du site : 1200 pixels */
+	margin-left:auto; /* Permet de centrer le site par rapport à la page */
+	margin-right:auto;
+	font-family:'Volter', Georgia, serif;
+	background-color:#000000;
+	color:#fff; /* Couleur du texte en blanc */
+}
+
+section p
+{
+	width:52%;
+	margin-left:25%;
+	text-align:justify;
+	margin-top:3%; /* Espace entre le texte et le menu */
+}
+
+#index
+{
+	float:left;
+	width:70%;
+	margin-left:5%;
+}
+
+#index2
+{
+	float:right;
+	width:70%;
+}
+
+article p
+{
+	width:30%;
+	margin-left:22%;
+	text-align:justify;
+	border-right:1px dashed white; /* Bordure à droite du texte pour séparé le texte des images */
+	padding-right:50px; /* Marge entre le texte et la bordure */
+	float:left;
+}
+
+article a, section a
+{
+	color:white; /* Couleurs de liens en blanc */
+}
+
+h1
+{
+	width:60%;
+	margin-left:22%;
+	text-align:center;
+}
+
+/* Images */
+
+#banniere
+{
+	margin-left:10%;
+}
+
+.images
+{
+	width:250px;
+	height:125px;
+	margin-left:50px;
+	margin-top:20px;
+}
+
+#imageIndex
+{
+	margin-left:-160px;
+	border:4px solid white;
+	border-radius:20px;
+	width:300px;
+	height:250px;
+}
+
+#imageIndex2
+{
+	width:300px;
+	height:270px;
+	margin-left:220px;
+	border:4px solid green;
+	border-radius:20px;
+	margin-top:-300px;
+}
+
+.fleches
+{
+	width:180px;
+	margin-left:760px;
+	margin-top:10px;
+}
+
+.round
+{
+	margin-left:30%;
+}
+
+#nous
+{
+	margin-left:20%;
+}
+
+.mario
+{
+	margin-left:35%;
+	width:400px;
+	height:140px;
+}
+
+/* Navigation */
+
+#menu
+{
+	width:55.2%;
+	margin-left:24%;
+	padding:10px 0 0 0;
+	list-style:none; /* Supprime les petits ronds */
+	background:#111;
+	background:linear-gradient(#58FAF4, #000000); /* Dégradé */
+	border-radius:50px; /* Pour arrondir les angles du menu */
+}
+
+#menu li
+{
+	float:left; /* Les éléments se mettent les uns après les autres */
+	padding-bottom:10px; /* Agrandit la marge intérieure du dessous */
+}
+
+#menu a
+{
+	padding:0 25px; /* Marge intérieure entre les boutons */
+	color:#ffffff;
+	text-transform:uppercase; /* Force le texte à se mettre en majuscules */
+	font:bold 12px/25px 'Volter';
+	text-decoration:none; /* Les liens n'ont plus les attributs par défaut */
+}
+
+#menu li:hover > a
+{
+	color:#000000; /* Au survol de la souris le texte devient noir */
+}
+
+#menu:after /* Permet le bon affichage du menu */
+{
+	display:block;
+	content:" ";
+	clear:both;
+}
+
+/* Pied de page */
+
+footer, footer a
+{
+	text-align:center;
+	margin-top:3%;
+	color:white;
+}
